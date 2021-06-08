@@ -1,0 +1,378 @@
+:root{
+    --main-bg-color:plum;
+    --main-text-color:mediumorchid;
+    --second-text-color:grey;
+    --second-bg-color:whitesmoke;
+}
+
+.primary-text{
+    color: var(--main-text-color);
+}
+
+.second-text{
+    color:var(--second-text-color);
+}
+
+.primary-bg{
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg{
+    background-color: var(--second-bg-color);
+}
+
+.rounded-full{
+    border-radius: 100%;
+   
+}
+#wrapper{
+    overflow-x: hidden;
+    background-color: grey;
+}
+
+/* sidebar*/
+#sidebar-wrapper{
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper, .sidebar-heading{
+    padding:0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+#sidebar-wrapper, .list-group{
+    width:15rem;
+
+}
+
+#page-content-wrapper{
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+    margin-left: 0;
+}
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+.list-group-item{
+    border: none;
+    padding: 20px 30px;
+    border: border-box;
+}
+.list-group-item.active{
+    background-color: transparent;
+    color:var(--main-text-color);
+    font-weight: bold;
+    border: none;
+}
+
+
+@media (min-width:768px){
+    #sidebar-wrapper{
+        margin-left:0;
+    }
+
+    #page-content-wrapper{
+        min-width:0;
+        width:100%
+    }
+    
+    #wrapper-toggled, #sidebar-wrapper{
+        margin-left: -15rem;
+    }
+
+}
+
+
+/*navbar*/
+
+#navbar{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+    padding: 0;
+}
+#page-content-wrapper .navbar-toggler{
+    padding-right:0;
+    outline: none;
+    border: none;
+}
+.collapse ul li {
+    padding-top: 20px;
+    margin-right: 10px;
+    
+}
+.input-group{ 
+    height:35px;
+    background-color: gainsboro;
+    border-radius: 4px;
+    
+}
+
+.input-group span{
+    display:inline-block;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+
+.input-group input{
+    height:100%;
+    border:none;
+    outline:none;
+    padding: 0;
+    margin: 0;
+    
+}
+/*dashboard dropdown*/
+.dropdown-wrapper input{
+    height:35px;
+    padding:.5rem;
+    border:none;
+    outline:none;
+    margin-left: 20x;
+    border-radius: 4px;
+}
+
+input:placeholder-shown{
+    font-size: 15px;
+}
+  
+ /* search button*/ 
+.btn {
+    background-color:gainsboro;
+    border: none;
+    color:black;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 19px;
+    height:35px;
+   
+    
+}
+
+.btn{
+    border: none;
+    background-color: gainsboro;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:grey;
+}
+/* go pro div*/
+.pro{
+    width:100%;
+    margin-top: 50px;
+    background-image:linear-gradient(to right, aqua,blueviolet);
+}
+.pro-text{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.pro-text .star{
+    margin-left:0px;
+    margin-top: 10px;
+    background-color:red;
+    width: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+}
+
+#star{
+    margin-left: 10px;
+    color:white;
+    margin-top: 10px;    
+}
+#pro{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+#pro:hover{
+    color:violet;
+}
+/*profile history cards*/
+.card-subtitle{
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.ml-auto{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.career{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+/* table buttons*/
+.btn-circle{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.btn-info{
+    color:white;
+    background-color: blue;
+    border-color: blue;
+}
+
+/* footer*/
+footer.footer{
+    padding: 1rem ;
+    direction: ltr;
+    background-color: white;
+}
+footer.footer ul{
+    margin: 0px ;
+    list-style: none;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0px 7px;
+}
+.text-muted{
+    color:wheat;
+    font-size: 14px;
+}
+.footer{
+    margin-top: 20px;
+    position: fixed;
+}
+
+/* profile page*/
+/* side bar*/
+
+.right-col{
+    padding-left: 20px;
+    padding-right: 2000px;
+    margin-right: 1000px;
+    float: right;
+    
+}
+.col-6{
+    background-color: white;
+    margin-top: 20px;
+    width:40%;
+   
+    
+}
+
+
+.body-side{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.skills{
+    border-radius: 30px;
+    border: 2px gry solid;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.user-skill{
+    color: blue;
+    font-weight: bold;
+}
+#skill1, #skill8{
+    width:200px;
+    height:40px;
+    padding:4px;
+    text-align: center;
+}
+#skill2, #skill3{
+    width:70px;
+    height:40px;
+    padding:4px;
+    text-align: center;
+}
+#skill4{
+    width:100px;
+    height:40px;
+    padding:4px;
+    text-align:center;
+}
+#skill5, #skill6,#skill7{
+    width:150px;
+    height:40px;
+    padding:4px;
+    text-align:center;
+}
+
+/*notes*/
+.note-btn{
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.note-btn:hover{
+    background-color: grey;
+    margin-bottom: 10px;
+}
+#comment{
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    border: grey 1px solid;
+}
+
+/*second side bar*/
+
+/* information card*/
+.info-card{
+    background-color:white;
+    margin-right: 20px;
+    margin-bottom:0px;
+    
+}
+.info-card h4{
+    text-align: center;
+}
+#resume-btn{
+    margin-bottom: 10px;
+    background-color: blue;
+    color:white;
+}
+.table{
+    overflow-x: auto;
+}
+
+#email-btn{
+    margin-bottom: 10px;
+    background-color:whitesmoke;
+    color:blue;
+    border: blue 2px solid;
+}
+/* experience card*/
+
+.info-card ul{
+    text-align: left;
+}
+
+.exp li{
+    list-style: none;
+    border-bottom: 2px gray solid;
+    margin-top: 10px;
+}
+.exp li a{
+    margin-left: 0px;
+}
+.btn-circle1{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
+/* education card*/
+.edu{
+    width:55%;
+    background-color:white;
+    margin-right: 20px;
+    margin-bottom:0px;
+    border-radius: 10px;
+}
+

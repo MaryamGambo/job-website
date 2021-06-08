@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+    <!-- Bootstrap CSS--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+     crossorigin="anonymous">
+     <!--line awesome fonts -->
+     <link rel="stylesheet"
+     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+ 
+     <!-- linking my CSS file-->
+     <link rel="stylesheet"  href="css/style.css"> 
+     <!--linking my JS file--> 
+     <script src="js/dashboard.js"></script>
+
+     
+    
+     <title>JobClues</title>
+  </head>
+  <body>
+
+    <div id="wrapper" class="d-flex">
+      
+      <!--side bar-->
+      <div class="bg-dark" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+        <span class="lab la-affiliatetheme la-2x"></span> JobClues
+        </div>
+      
+       <div class="list-group list-group-flush my-3">
+        <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text active">
+          <span class="las la-tachometer-alt la-2x"></span> Dashboard
+        </a>
+        <a href="profile.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+          <span class="las la-user-circle la-2x"></span> Profile
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+          <span class="las la-toolbox la-2x"></span> Job Offers
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+          <span class="las la-hotel la-2x"></span> Companies
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+          <span class="las la-cog la-2x"></span> Settings
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
+          <span class="las la-power-off la-2x"></span> LogOut
+        </a>
+
+      </div>
+
+    </div>
+
+     <!--page content-->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4" id="navbar">
+        <div class="d-flex align-items-center">
+          <span class="las la-align-left la-2x  ls-4 " style="color: black;" id="menu-target"></span>
+          <h2 class="fs-2 m-0">Dashboard</h2>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         
+             <li class="nav-item-dropdown">  
+                <div class="input-group  navbar-search mb-3">
+                  <span class="las la-search la-2x" id="basic-addon1"></span>
+                  <input type="search" class="form-control me-2" placeholder="Search a Job" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+            </li> 
+            <li class="nav-item-dropdown">     
+              <div class='dropdown-wrapper'>
+                <input type="search" placeholder="Search city" list='search'>
+                <datalist id="search">
+                <option value="All cities">
+                <option value="Abuja">
+                <option value="Kaduna">
+                <option value="Lagos">
+              </datalist>
+            </div>
+          </li>
+           
+            <li class="nav-item-dropdown">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </li>
+            <li class="nav-item-dropdown">
+                <span class="las la-bell la-2x"></span>
+              <span class="las la-user la-2x">Fran Barbados</span>
+              </a>
+            </li>
+          </ul> 
+        </div>
+      </nav>
+
+      
+     <!--top cards-->
+      <div class="container-fluid px-4">
+        <div class="row g-3 my-2">
+        <div class="col-md-3">
+          <div class="p-3 shadow-sm d-flex justify-content-around align-items-center rounded"
+           style="background-color: whitesmoke;">      
+            <div>
+              <h3 class="fs-2">14</h3>
+              <p class="fs-3">Job Applied</p>
+            </div>
+            <span class="las la-check la-2x  border rounded-full primary-bg p-3"></span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="p-3 shadow-sm d-flex justify-content-around align-items-center rounded"
+           style="background-color: whitesmoke;">
+            <div>
+              <h3 class="fs-2">20</h3>
+              <p class="fs-3">Saved Jobs</p>
+            </div>
+            <span  style="background-color:blue"class="las la-toolbox la-2x  border rounded-full  p-3"></span>
+          </div>
+          
+        </div>
+
+        <div class="col-md-3">
+          <div class="p-3 shadow-sm d-flex justify-content-around align-items-center rounded" 
+          style="background-color: whitesmoke;">
+            <div>
+              <h3 class="fs-2">07</h3>
+              <p class="fs-3">Job Offers</p>
+            </div>
+            <span class="las la-flag la-2x  border rounded-full p-3" style="background-color:limegreen"></span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="p-3 shadow-sm d-flex justify-content-around align-items-center rounded" 
+          style="background-color: whitesmoke;">
+            <div>
+              <h3 class="fs-2">00</h3>
+              <p class="fs-3">Post a Job</p>
+            </div>
+            <span class="lab la-usps la-2x border rounded-full p-3" style="background-color:orange" ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!--go pro card-->
+    <div class="container-fluid px-4">
+        <div class="row g-3 my-5 pro   ">
+            <div class="justify-content-around align-item-center">
+             <div class="pro-text">
+              <div class="star">
+                <span class="las la-star la-2x" id="star"></span>
+              </div>
+              <h2>See jobs where you'd be a top applicant</h2>
+              <p style="color:antiquewhite">Try free for 5 months</p>
+             </div>
+              <button class="btn btn-outline-success" type="submit" id="pro">GO PRO</button>
+            </div>
+          </div>
+    </div>
+    
+    <!--career cards-->
+    <div class="career ">
+      <div class="md-flex align-items-center">
+        <h4 class="card-title">Based on your profile and career interests</h4> 
+        <p class="card-subtitle">UX Designer
+          <span style="font-weight:bold;font-size:30px;color:orange;">.</span> 
+          Any Location<span style="font-weight: bold;font-size:30px;color:purple;">.</span>Any Industries</p>
+      </div>
+  
+      <div class="ml-auto ">
+        <div class="dl">
+          <select class="custom-select">
+            <option value="0" selected>Monthly</option>
+            <option value="0" >Weekly</option>
+            <option value="0" >Yearly</option>
+            <option value="0" >Daily</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid px-4">
+      <div class="col-md-12">
+        <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="text-align:left;;">
+              <img src="https://img.icons8.com/color/48/000000/material-ui.png"/>
+              <h5 class="text">UX Lead and Researcher</h5>
+              <p class="card-title mb-4 fw-bold">Global Corperation Pvt. Ltd </p>
+              <p class="card-title mb-4"><span class="las la-search-location "></span>Lagos,Nigeria </p>
+              <button class="btn" type="submit" >See More</button>
+              <span class="text-muted">Since last month</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="text-align:left;;">
+              <img src="https://img.icons8.com/color/48/000000/light-on--v1.png"/>
+              <h5 class="text">UX Designer</h5>
+              <p class="card-title mb-4 fw-bold">Umbrella Corperation Pvt. Ltd </p>
+              <p class="card-title mb-4"><span class="las la-search-location "></span>Abuja,Nigeria </p>
+              <button class="btn" type="submit" >See More</button>
+              <span class="text-muted">Since last month</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="text-align:left;;">
+              <img src="https://img.icons8.com/fluent/48/000000/u-shaped-style.png"/>
+              <h5 class="text">Sr. UX Designer</h5>
+              <p class="card-title mb-4 fw-bold">Globex Corperation Pvt. Ltd </p>
+              <p class="card-title mb-4"><span class="las la-search-location "></span>Lagos,Nigeria </p>
+              <button class="btn" type="submit" >See More</button>
+              <span class="text-muted">Since last month</span>           
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body" style="text-align:left;;">
+              <img src="https://img.icons8.com/nolan/48/light-on.png"/>
+              <h5 class="text ">UI/UX Designer</h5>
+              <p class="card-title mb-4 fw-bold">Vehement Capital Partners </p>
+              <p class="card-title mb-4"><span class="las la-search-location "></span>Kaduna,Nigeria </p>
+              <button class="btn" type="submit" >See More</button>
+              <span class="text-muted">Since last month</span>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+   
+    <!--table-->
+   <div class="container-fluid px-4">
+    <div class="row my-3">
+        <h3 class="fs-4 mb-3">Recent Top Companies</h3>
+        <div class="col">
+            <table class="table bg-light rounded shadow-sm table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" width="50">#</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">No of Jobs Offered</th>
+                        <th scope="col">No of searches found</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                    <th scope="row">1</th>
+                    <td><a class="btn btn-circle btn-info text-white" style="background-color:fuchsia;">AG</a>
+                         Agro-mechanics LTD</td>
+                    <td>20</td>
+                    <td>30</td>
+                   </tr>
+
+                   <tr>
+                    <th scope="row">2</th>
+                    <td><a class="btn btn-circle btn-info text-white">GC</a> Global Corporation Pvt. Ltd</td>
+                    <td>15</td>
+                    <td>50</td>
+                   </tr>
+                   
+                   <tr>
+                    <th scope="row">3</th>
+                    <td><a class="btn btn-circle btn-info text-white" style="background-color:gold;">MD</a> 
+                        Melanie Disk Corporation</td>
+                    <td>30</td>
+                    <td>40</td>
+                   </tr>
+                   
+                   <tr>
+                    <th scope="row">4</th>
+                    <td><a class="btn btn-circle btn-info text-white" style="background-color:indianred;">VC</a> 
+                        Vexon Capital Partners</td>
+                    <td>25</td>
+                    <td>42</td>
+                   </tr>
+
+                   
+                   <tr>
+                    <th scope="row">5</th>
+                    <td><a class="btn btn-circle btn-info text-white" style="background-color:rebeccapurple;">SS</a> 
+                        Samson and sons LTD</td>
+                    <td>35</td>
+                    <td>53</td>
+                   </tr>
+                   
+                   <tr>
+                    <th scope="row">6</th>
+                    <td><a class="btn btn-circle btn-info text-white" style="background-color:salmon;">DE</a> 
+                        Destiny Electronics LTD</td>
+                    <td>15</td>
+                    <td>40</td>
+                   </tr>
+                   
+                   <tr>
+                    <th scope="row">7</th>
+                    <td><a class="btn btn-circle btn-info text-white" style="background-color:yellowgreen;">CV</a> 
+                        Capital Ventures</td>
+                    <td>32</td>
+                    <td>85</td>
+                   </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </div>
+
+   <!--footer-->
+   <footer class="footer">
+       <div class="container-fluid">
+           <div class="row text-muted">
+               <div class="col-6 text-left">
+                   <p class="mb-0">
+                       <a href="#" class="text-muted">
+                           <strong>Dashboard JobClues &copy</strong>
+                       </a>
+                   </p>
+               </div>
+               <div class="col-6 text-right">
+                   <ul class="list-inline">
+                       <li class="footer-item">
+                           <a href="#" class="text-muted">
+                               Support
+                           </a>
+                       </li>
+                       <li class="footer-item">
+                        <a href="#" class="text-muted">
+                            Help center
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="text-muted">
+                            Privacy
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="text-muted">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </footer>
+ </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+     crossorigin="anonymous"></script>
+
+   
+
+     <script>
+       var el =document.getElementById('wrapper')
+      var toggleButton = document.getElementById('menu-target')
+
+      toggleButton.onclick = function() {
+         el.classList.toggle('toggled')
+       }
+     </script>
+  </body>
+</html>
